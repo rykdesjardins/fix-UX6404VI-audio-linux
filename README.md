@@ -1,5 +1,5 @@
 # fix-UX6404VI-audio-linux
-Fix no sound problem on Linux for UX6404VI Asus laptop
+Fixes the audio problem on Linux for the ASUS Zenbook Pro 14 OLED (UX6404) laptop. 
 
 ## Steps
 If you've never built the Linux kernel before, it can sound pretty scary but it's actually pretty simple. That being said, you will need to download the kernel source code, update one line, and build it.
