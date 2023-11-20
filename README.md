@@ -6,6 +6,11 @@ If you've never built the Linux kernel before, it can sound pretty scary but it'
 
 You'll need to install a few things before getting started. Most of these are necessary to build the kernel and the driver patch.
 
+On Ubuntu, here are the packages I installed using `apt` : 
+```
+sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc libncurses-dev bison flex libssl-dev libelf-dev libelf++0
+```
+
 0. Select a Linux kernel version. On my end, I went with 6.6.1. You can check which version you're currently running using the `uname -a` command. 
 1. Download the source code from the [https://kernel.org/](https://kernel.org/) website. Feel free to verify your download before untar-ing.
 2. Untar the source code and `cd` to the `linux-x.x.x` directory.
