@@ -18,7 +18,7 @@ SND_PCI_QUIRK(0x1043, 0x1863, "ASUS UX6404V1", ALC245_FIXUP_CS35L41_SPI_2),
 ```
 
 6. Save and close the file
-7. Build the kernel.
+7. Build the kernel. There are many tutorials online on how to do this. Here's a summary : 
     1. Copy current configuration : `cp -v /boot/config-$(uname -r) .config`
     2. Run `make menuconfig`, simply save and exit
     3. Make : `make`. This will take a while. You can build faster by using the `-j` argument along with a number to use multiple cores. i.e.: `make -j 4`. To use all of them, run `make -j $(nproc)`. 
