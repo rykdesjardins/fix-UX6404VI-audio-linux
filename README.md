@@ -43,10 +43,11 @@ sudo cp ux6404vi_cirrus_patch.cpio /boot/ux6404vi_cirrus_patch.cpio
 ```
 GRUB_EARLY_INITRD_LINUX_CUSTOM="ux6404vi_cirrus_patch.cpio"
 ```
-12. Reboot.
+12. Update bootloader with new config. For grub, I used `sudo update-grub`.
+13. Reboot.
 
 ## Expected outcome
-The obvious way to test if it works it to try and play sound. 
+The obvious way to test if it works is to try and play sound. For some reason, the sound check from the UI on Ubuntu didn't work, but everything else including system sounds are working properly.
 
 The output of `sudo dmesg | grep CSC3551` should also look like this. 
 ```
